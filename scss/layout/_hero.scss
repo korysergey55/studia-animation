@@ -1,0 +1,97 @@
+/* ====================== HERO-MOBILE =====================================*/
+.overlay{
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0;
+
+  width: 100%;
+  max-width: 480px;
+  height: 100%;
+  max-height: 400px;
+
+  text-align: center;
+  background-image: url(../images/hero/overlay-bg-mobile.png), url(../images/hero/overlay-mobile.jpg);
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat; 
+  background-color:  #C4C4C4;
+
+  .title{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 360px;
+    
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.615;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  .main-button{
+    margin: 30px auto 0 auto;
+    padding: 10px 32px;
+    min-width: 200px;
+    
+    font-size: 16px;
+    line-height: 1.9;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #2196F3;
+    border:transparent;
+    border-radius: 4px;
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.15);
+    
+    &:hover,
+    &:focus{
+        outline: none;
+    }
+  }
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: url( ../images/hero/overlay-mobile@2x.jpg);
+  }
+}
+/* ====================== HERO-TABLET =====================================*/    
+@media screen and (min-width: 768px){
+  .overlay{
+    background-image: url(../images/hero/overlay-bg-tablet.png), url(../images/hero/overlay-tablet.jpg);
+    max-height: 400px;
+    max-width: 768px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .overlay {
+      background-image: url( ../images/hero/overlay-tablet@2x.jpg);
+    }
+  }
+}
+/* ====================== HERO-DASKTOP ================================*/
+@media screen and (min-width: 1200px){
+.overlay{
+  max-width: 1600px;
+  max-height: 600px;
+  background-image: url(../images/hero/overlay-bg.png), url(../images/hero/overlay.jpg);
+  
+  .title{
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.3;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+    .overlay {
+    background-image: url( ../images/hero/overlay@2x.jpg);
+    }
+  }
+}

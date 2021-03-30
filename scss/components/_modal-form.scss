@@ -1,0 +1,179 @@
+/* ======================MODAL-FORM-MOBILE,TABLET===================================*/
+.modal-button-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 8px 0 auto;
+   
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    outline: none;
+    cursor: pointer;
+  }
+  .modal-close-svg {
+    display: flex;
+  
+    width: 18px;
+    height: 18px;
+    fill: #212121;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+.modal-button-close:hover .modal-close-svg {
+  fill: #2196f3;
+}
+.title-form {
+  margin: 2px 40px 12px 40px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $text-color;
+}
+.modal-form {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+.label {
+  position: relative;
+  margin: 10px auto 4px 40px;
+ 
+  display: block;
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: $secindary-text-color;
+}
+.modal-input {
+  display: block;
+  margin: 0 auto;
+  padding-left: 42px;
+  
+  width: 370px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  &:focus {
+    outline: 1px solid #2196f3;
+    cursor: pointer;
+  }
+}
+.modal-form-icon-thumb{
+  position: relative;
+
+  .modal-icon-svg {
+    position: absolute;
+    left: 12%;
+    top:30%;
+    fill: #212121;
+    display: block;
+    width: 15px;
+    height: 15px;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.modal-input:focus + .modal-icon-svg{
+  fill: #2196f3;
+  cursor: pointer;
+}
+.modal-texterea {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  
+  width: 370px;
+  height: 120px;
+  resize: none; /*убрать растягивания окна в текстариа*/
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  &:focus {
+    outline: 1px solid #2196f3;
+    cursor: pointer;
+  }
+}
+.modal-button-sent {
+  margin: 30px auto 40px auto;
+  padding: 10px 55px;
+  
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  width: 200px;
+  height: 50px;
+  
+  outline: none;
+  border: none;
+  background: #188ce8;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    outline: none;
+    border: none;
+  }
+}
+/* ====================== MODAL-FORM-DASKTOP ===========================================*/
+@media screen and (min-width:1200px){
+  .modal-input{
+    margin: 4px auto 10px auto;
+    width: 448px;
+    height: 40px;
+  }
+  .modal-texterea{
+    width: 448px;
+    height: 120px;
+  }
+  .modal-icon-svg{
+    left: 10%;
+  }
+}
+ /* ====================== CHECKBOX ===========================================*/
+.label-checkbox {
+  margin: 20px auto 0 auto;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: $secindary-text-color;
+
+  &::before{
+    display: inline-block;
+    content: "";
+    margin-right: 10px;
+    width: 16px;
+    height: 15px;
+    background-image: url(../images/checkbox.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2px;
+    border: 1px solid  #212121;
+  }
+}
+.input-checkbox:checked + .label-checkbox::before{
+  background-color: $akcent-color;
+}
+.checkbox-link{
+  color: #2196F3;
+}
