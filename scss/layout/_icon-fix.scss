@@ -1,0 +1,62 @@
+
+.icon-fix-telephone {
+    position: fixed;
+    top: 80%;
+    left: 73%;
+    z-index: 6;
+    display: block;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    text-decoration: none;
+    animation-duration: 250ms;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    animation-iteration-count: infinite;
+}
+  
+.icon-fix-svg {
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+    
+  @media screen and(min-width:768px){
+    .icon-fix-telephone {
+      top: 80%;
+      left: 78%;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+      color: var(--text-color);
+      text-decoration: none;
+      animation-duration: 250ms;
+      animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      animation-iteration-count: infinite;
+    }
+    
+    .icon-fix-svg {
+      display: block;
+      margin: 0 auto;
+      padding-top: 20px;
+      width: 70px;
+      height: 70px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  @media screen and(min-width:1200px){
+    .icon-fix-telephone {
+      top: 80%;
+      left: 83%;
+      font-size: 18px;
+  }
+}
